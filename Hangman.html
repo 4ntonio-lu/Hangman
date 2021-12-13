@@ -1,0 +1,41 @@
+<header>
+    <link rel = "stylesheet" href = "Hangman.css">
+    <h1>H A N G M A N</h1>
+</header>
+<body onkeypress = "KeyPress(event)">
+    <div id = "body">
+        <div id = "left">
+            <div id = "container">
+                <img id = "hangman6" class = "hangman" src = "Pictures/Hangman 6.png" style = "display: none"/>
+                <img id = "hangman6win" class = "hangman" src = "Pictures/Hangman 6 Win.png" style = "display: none"/>
+                <img id = "hangman5" class = "hangman" src = "Pictures/Hangman 5.png" style = "display: none"/>
+                <img id = "hangman5win" class = "hangman" src = "Pictures/Hangman 5 Win.png" style = "display: none"/>
+                <img id = "hangman4" class = "hangman" src = "Pictures/Hangman 4.png" style = "display: none"/>
+                <img id = "hangman4win" class = "hangman" src = "Pictures/Hangman 4 Win.png" style = "display: none"/>
+                <img id = "hangman3" class = "hangman" src = "Pictures/Hangman 3.png" style = "display: none"/>
+                <img id = "hangman3win" class = "hangman" src = "Pictures/Hangman 3 Win.png" style = "display: none"/>
+                <img id = "hangman2" class = "hangman" src = "Pictures/Hangman 2.png" style = "display: none"/>
+                <img id = "hangman2win" class = "hangman" src = "Pictures/Hangman 2 Win.png" style = "display: none"/>
+                <img id = "hangman1" class = "hangman" src = "Pictures/Hangman 1.png" style = "display: none"/>
+                <img id = "hangman1win" class = "hangman" src = "Pictures/Hangman 1 Win.png" style = "display: none"/>
+                <img id = "hangman0lose" class = "hangman" src = "Pictures/Hangman 0 Lose.png" style = "display: none"/>
+            </div>
+            <div id = "wordbox">
+                <p id = "hiddenword"></p>
+            </div>
+        </div>
+        <div id = "right">
+            <p id = "hearts"> &#128156 &#128156 &#128156 &#128156 &#128156 &#128156</p>
+            <div id = "buttons"></div>
+            <div id = "hintbox">
+                <p id = "hint" style = "display: none"></p>
+                <button id = "hintbutton" onClick = "showhint()">CLICK TO REVEAL HINT</button>
+            </div>
+        </div>
+    </div>
+    <button id = "resetbutton" onClick = "history.go(0)">RESET</button>
+    <script src = "Hangman.js"></script>
+</body>
+<footer>
+    <p>by Antonio Lu</p>
+</footer>

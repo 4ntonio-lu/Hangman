@@ -1,0 +1,124 @@
+body {
+    font-family: monospace;
+    background: #cccccc;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#body {
+    display: flex;
+}
+
+#left {
+    margin-left: 2vw;
+}
+
+#container {
+    margin: 0vw 5vw;
+}
+
+.hangman {
+    height: 30.25vw;
+}
+
+#wordbox {
+    border-color: black;
+    border-style: dashed;
+    letter-spacing: 1vw;
+    border-radius: 5px;
+    border-width: 3px;
+    margin: 0vw 5vw;
+    font-size: 2vw;
+    padding: .5vw;
+    height: 5vw;
+}
+
+#right {
+    margin-right: 8vw;
+    margin-top: 2vw;
+    width: 50vw;
+}
+
+#hearts {
+    position: absolute;
+    font-size: 1.5vw;
+    right: 10vw;
+    top: 60px;
+}
+
+#buttons {
+    margin: 3vw 0vw 3vw 4vw;
+    width: 42vw;
+}
+
+.input {
+    border-radius: 5px;
+    font-size: 1.5vw;
+    margin: 1.25vw;
+    color:black;
+    height: 3vw;
+    width: 3vw;
+}
+
+.input:hover {
+    background-color: #8b6be3;
+    color: white;
+}
+
+.input:active {
+    transform: translate(-2px, 4px);
+}
+
+#hintbox {
+    margin: 3.2vw 5vw 2vw 0vw;
+    border-color: black;
+    border-style: dashed;
+    border-radius: 5px;
+    border-width: 3px;
+    padding: .5vw;
+    height: 5vw;
+    width: 50vw;
+}
+
+#hint {
+    margin-bottom: 70vw;
+    font-size: 2vw;
+}
+
+#hintbutton {
+    letter-spacing: .05vw;
+    border-radius: 5px;
+    margin-top: 1vw;
+    font-size: 1vw;
+    height: 3vw;
+    width: 20vw;
+}
+
+#hintbutton:hover {
+    color: #8b6be3;
+    font-weight: 549;
+    font-size: 1.1vw;
+}
+
+#hintbutton:active {
+    transform: translate(-2px, 4px);
+}
+
+#resetbutton {
+    letter-spacing: .05vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    height: 3vw;
+    width: 10vw;
+}
+
+#resetbutton:hover {
+    color: #8b6be3;
+    font-weight: 550;
+    font-size: 1.1vw;
+}
+
+#resetbutton:active {
+    transform: translate(-2px, 4px);
+}
