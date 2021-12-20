@@ -1,3 +1,27 @@
+#portfolio {
+    transition: box-shadow 0.75s ease-in-out, border-color 0.75s ease-in-out;
+    animation: fadeup 2s ease 8s forwards;
+    background-color: transparent;
+    border: 3px solid #8b6be3;
+    border-radius: 0.5vw;
+    position: absolute;
+    font-size: 0.75vw;
+    color: #8b6be3;
+    font-weight: 700;
+    height: 2.5vw;
+    margin: auto;
+    width: 10vw;
+    left: 2vw;
+    top: 1vw;
+}
+
+#portfolio:hover {
+    box-shadow: 0 0 40px 40px #8b6be3 inset;
+    border-color: black;
+    color: #cccccc;
+    cursor: pointer;
+}
+
 body {
     font-family: monospace;
     background: #cccccc;
@@ -97,10 +121,10 @@ body {
 }
 
 #hintbutton:hover {
-    color: #8b6be3;
     font-weight: 549;
-    font-size: 1.1vw;
     transition: 0.5s;
+    font-size: 1.1vw;
+    color: #8b6be3;
 }
 
 #hintbutton:active {
@@ -116,10 +140,10 @@ body {
 }
 
 #resetbutton:hover {
-    color: #8b6be3;
     font-weight: 550;
-    font-size: 1.1vw;
     transition: 0.5s;
+    font-size: 1.1vw;
+    color: #8b6be3;
 }
 
 #resetbutton:active {

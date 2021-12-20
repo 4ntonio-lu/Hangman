@@ -18,13 +18,13 @@ function input(letter) {
 		if (letter == answer[i]) {
 			display = (display.substring(0, i) + letter + display.substring(i + 1, answer.length));
 			button.style.background = "#8b6be3";
-			button.style.color = "white"
+			button.style.color = "white";
             correct = true;
 		}
 	}
 	if (correct == false) {
 		button.style.background = "black";
-		button.style.color = "white"
+		button.style.color = "white";
 		lives--;
 		drawHangman();
 	}
@@ -109,7 +109,9 @@ function drawHangman() {
 }
 
 function randomWord() {
-	let random = (Math.floor(Math.random() * words.length));
+	let ms = new Date().getMilliseconds();
+	let random = ms % words.length;
+	//let random = (Math.floor(Math.random() * words.length));
 	answer = words[random][0];
 	hint = words[random][1];
 	for (let i = 0; i < answer.length; i++) {
