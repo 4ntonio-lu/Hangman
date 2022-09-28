@@ -12,31 +12,30 @@ function input(letter) {
 		return;
 	}
 	const button = document.getElementById(letter);
+	button.style.color = "white";
     button.disabled = true;
 	let correct = false;
 	for (let i = 0; i < answer.length; i++) {
 		if (letter == answer[i]) {
 			display = (display.substring(0, i) + letter + display.substring(i + 1, answer.length));
 			button.style.background = "#8b6be3";
-			button.style.color = "white";
             correct = true;
 		}
 	}
 	if (correct == false) {
 		button.style.background = "black";
-		button.style.color = "white";
 		lives--;
 		drawHangman();
 	}
 	else {
 		document.getElementById("hiddenword").innerHTML = display;
-		let total = 0;
+		let checkwin = true;
 		for (let i = 0; i < answer.length; i++) {
-			if (display[i] != '_') {
-				total++;
+			if (display[i] == '_') {
+				checkwin = false;
 			}
 		}
-		if (total == answer.length) {
+		if (checkwin) {
 			win = true;
 			drawHangman();
 		}
@@ -109,9 +108,7 @@ function drawHangman() {
 }
 
 function randomWord() {
-	let ms = new Date().getMilliseconds();
-	let random = ms % words.length;
-	//let random = (Math.floor(Math.random() * words.length));
+	let random = new Date().getMilliseconds() % words.length;
 	answer = words[random][0];
 	hint = words[random][1];
 	for (let i = 0; i < answer.length; i++) {
@@ -133,9 +130,8 @@ function createButtons() {
 	document.getElementById("buttons").innerHTML = text;
 }
 
-function KeyPress(e) {
-	
-	input(String.fromCharCode(e.which));
+function KeyPress(x) {
+	input(String.fromCharCode(x.which));
 }
 
 randomWord();
