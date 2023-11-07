@@ -1,5 +1,6 @@
 var words = [ ["pomegrante", "a fruit"], ["warriors", "an NBA team"], ["netherlands", "a European country"], ["wyoming", "a US State"], ["angular", "a JavaScript framework"], ["popeyes", "a fast food chain"], ["kayak", "a type of boat"], 
- ["porsche", "a high performance automobile manufacturer"], ["monopoly", "a board game"], ["motherboard", "a computer part"], ["knight", "a chess piece"], ["microwave", "a kitchen appliance"], ["xylophone", "a musical instrument"] ];
+ ["porsche", "a high performance automobile manufacturer"], ["monopoly", "a board game"], ["motherboard", "a computer part"], ["knight", "a chess piece"], ["microwave", "a kitchen appliance"], ["xylophone", "a musical instrument"], ["elephant", "a large mammal"],
+ ["butterfly", "an insect"], ["rainbow", "a meteorological phenomenon"] ];
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',	'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var display = "";
 var answer = "";
